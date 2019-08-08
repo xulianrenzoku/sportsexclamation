@@ -1,12 +1,18 @@
-# The Repository for SportsExclamation
+# SportsExclamation
 
-# Introduction
+## Introduction
 
-SportsExclamation provides daily fantasy basketball participants a central hub on which they can visually explore basketball statistics. The product is a dynamic web application in which users can consume, via interactive data visualizations, real-time historical data and potentially projections relating to daily fantasy basketball. The company sells directly to consumers. While the specific sales tactic has not been thoroughly discussed, more than likely we will have some sort of freemium model. This model would probably involve giving the user access to the service for a few weeks before having to pay, or some basic graphs would be available for free, but the more advanced and customizable graphs are behind a paywall. 
+•	An App that provides Daily Fantasy Basketball players with a tool to customize ideal lineups for their entries  
+•	Offers features like dashboard and visualization to allow users to explore basketball data with ease and freedom, different from tabular data information offered by existing companies on the market  
+•	Techniques used include Flask, EC2 (Amazon Web Service), Python, HTML, CSS and JavaScript  
 
-# Authors
+## Product Poster
 
-Jon-Ross Presta: Backend
-Max Alfaro: Frontend
-Evan Liu: Backend
-Xu Lian: Frontend
+<img src='poster_sportsexclamation.jpg'>
+
+## Authors
+
+Jon-Ross Presta: Backend  
+Max Alfaro: Frontend  
+Evan Liu: Backend  
+Xu Lian: Frontend 
