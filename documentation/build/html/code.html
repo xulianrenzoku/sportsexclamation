@@ -1,0 +1,215 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>API Reference &#8212; sportsExclamation 0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Our Code Tutorial" href="tutorial.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-scrapers">
+<span id="api-reference"></span><h1>API Reference<a class="headerlink" href="#module-scrapers" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="scrapers.is_player">
+<code class="descclassname">scrapers.</code><code class="descname">is_player</code><span class="sig-paren">(</span><em>position</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scrapers.html#is_player"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scrapers.is_player" title="Permalink to this definition">¶</a></dt>
+<dd><p>A helper function used to assist in parsing
+the roto_guru tables to validate the data</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="scrapers.push">
+<code class="descclassname">scrapers.</code><code class="descname">push</code><span class="sig-paren">(</span><em>target_file</em>, <em>target_dest</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scrapers.html#push"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scrapers.push" title="Permalink to this definition">¶</a></dt>
+<dd><p>Push a file from the EC2 to S3</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="scrapers.remove_local">
+<code class="descclassname">scrapers.</code><code class="descname">remove_local</code><span class="sig-paren">(</span><em>target_file</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scrapers.html#remove_local"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scrapers.remove_local" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete a file on the EC2</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="scrapers.roto_guru_helper">
+<code class="descclassname">scrapers.</code><code class="descname">roto_guru_helper</code><span class="sig-paren">(</span><em>dest_folder</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scrapers.html#roto_guru_helper"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scrapers.roto_guru_helper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Iterates over all days of basketball and saves values</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="scrapers.roto_guru_scraper">
+<code class="descclassname">scrapers.</code><code class="descname">roto_guru_scraper</code><span class="sig-paren">(</span><em>service</em>, <em>month</em>, <em>day</em>, <em>year</em>, <em>file_dest</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scrapers.html#roto_guru_scraper"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scrapers.roto_guru_scraper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accesses the data table from SERVICE, with statistics
+from MONTH-DAY-YEAR and saves to FILE_DEST
+SERVICE will be fd for FanDuel and dk for DraftKings</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="scrapers.rotoworld_injury_scraper">
+<code class="descclassname">scrapers.</code><code class="descname">rotoworld_injury_scraper</code><span class="sig-paren">(</span><em>file_dest</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scrapers.html#rotoworld_injury_scraper"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scrapers.rotoworld_injury_scraper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scrape the RotoWorld injury report and save
+the results to FILE_DEST</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="scrapers.rotoworld_projection_scraper">
+<em class="property">class </em><code class="descclassname">scrapers.</code><code class="descname">rotoworld_projection_scraper</code><a class="reference internal" href="_modules/scrapers.html#rotoworld_projection_scraper"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scrapers.rotoworld_projection_scraper" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="scrapers.rotoworld_projection_scraper.login">
+<code class="descname">login</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scrapers.html#rotoworld_projection_scraper.login"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scrapers.rotoworld_projection_scraper.login" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="scrapers.rotoworld_projection_scraper.scrape">
+<code class="descname">scrape</code><span class="sig-paren">(</span><em>site</em>, <em>file_dest</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scrapers.html#rotoworld_projection_scraper.scrape"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scrapers.rotoworld_projection_scraper.scrape" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="scrapers.stat_flatten">
+<code class="descclassname">scrapers.</code><code class="descname">stat_flatten</code><span class="sig-paren">(</span><em>row</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scrapers.html#stat_flatten"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#scrapers.stat_flatten" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse the statistics column into different rows</p>
+</dd></dl>
+
+<span class="target" id="module-deploy"></span><dl class="function">
+<dt id="deploy.connect_to_crontab">
+<code class="descclassname">deploy.</code><code class="descname">connect_to_crontab</code><span class="sig-paren">(</span><em>ssh</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/deploy.html#connect_to_crontab"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deploy.connect_to_crontab" title="Permalink to this definition">¶</a></dt>
+<dd><p>Launch Cron Jobs for scraping the daily results</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="deploy.create_or_update_environment">
+<code class="descclassname">deploy.</code><code class="descname">create_or_update_environment</code><span class="sig-paren">(</span><em>ssh</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/deploy.html#create_or_update_environment"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deploy.create_or_update_environment" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="deploy.git_clone">
+<code class="descclassname">deploy.</code><code class="descname">git_clone</code><span class="sig-paren">(</span><em>ssh</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/deploy.html#git_clone"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deploy.git_clone" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clone from the repo if it doesn’t exist or pull from it if it does</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="deploy.launch_application">
+<code class="descclassname">deploy.</code><code class="descname">launch_application</code><span class="sig-paren">(</span><em>ssh</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/deploy.html#launch_application"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deploy.launch_application" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run the application in the background</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="deploy.main">
+<code class="descclassname">deploy.</code><code class="descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/deploy.html#main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deploy.main" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="deploy.ssh_client">
+<code class="descclassname">deploy.</code><code class="descname">ssh_client</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/deploy.html#ssh_client"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deploy.ssh_client" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return ssh client object</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="deploy.ssh_connection">
+<code class="descclassname">deploy.</code><code class="descname">ssh_connection</code><span class="sig-paren">(</span><em>ssh</em>, <em>ec2_address</em>, <em>user</em>, <em>key_file</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/deploy.html#ssh_connection"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#deploy.ssh_connection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set up SSH connection</p>
+</dd></dl>
+
+<span class="target" id="module-user_definition"></span></div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">sportsExclamation</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction to SportsExclamation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="requirements.html">Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Our Code Tutorial</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API Reference</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="tutorial.html" title="previous chapter">Our Code Tutorial</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Evan Jon-Ross Max & Stan.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/code.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
