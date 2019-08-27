@@ -27,7 +27,6 @@ Player Projections Comparison Page
   
 ## Authors
 
-Jon-Ross Presta
-Max Alfaro 
-Evan Liu
-Xu Lian
+Max Alfaro, Xu Lian, Evan Liu, Jon-Ross Presta
+ 
+
