@@ -27,7 +27,7 @@ Player Projections Comparison Page
   
 ## Authors
 
-Jon-Ross Presta: Backend  
-Max Alfaro: Frontend  
-Evan Liu: Backend  
-Xu Lian: Frontend 
+Jon-Ross Presta
+Max Alfaro 
+Evan Liu
+Xu Lian
